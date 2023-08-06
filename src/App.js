@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './App.module.css'
 
+import Menu from './components/Menu';
+
 function App(props) {
     return (
         <div className={styles.mainContainer}>
@@ -12,11 +14,9 @@ function App(props) {
                     <div className={styles.imageFrame}>
 
                     </div>
-                    <div className={styles.separator}>
-                        
-                    </div>
+                    
                     <div className={styles.controls}>
-
+                        <Menu />
                     </div>
                 </div>
             </div>

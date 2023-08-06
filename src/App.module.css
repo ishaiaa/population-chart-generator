@@ -51,6 +51,8 @@
     height: 100%;
     width: calc(100% - 720px);
     background-color: #ffffff0b;
+    padding: 5px 10px;
+    box-sizing: border-box;
 }
 
 .footer {
