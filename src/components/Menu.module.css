@@ -204,6 +204,28 @@ input[type=number] {
 .dataField input[type=text] {
     width: calc(100% - 10rem - 15px);
 }
-.dataField input[type=number] {
+
+
+.dataNumberInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     width: 5rem;
+    height: 100%;
+}
+
+.dataNumberInput input {
+    width: 4rem;
+}
+
+.dataNumberButtons {
+    width: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dataNumberButtons button {
+    width: 1rem;
+    height: 100%;
 }

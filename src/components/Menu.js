@@ -36,8 +36,14 @@ function Menu(props) {
                             <div className={styles.icon}>
                                 <img src="https://www.pngkey.com/png/full/199-1999886_how-to-set-use-woman-icon-clipart.png" alt="" />
                             </div>
+                            <div className={styles.dataNumberInput}>
+                                <input type="number" placeholder="" min="0"/>
+                                <div className={styles.dataNumberButtons}>
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                            </div>
                             <input type="text" placeholder='Label'/>
-                            <input type="number" min="0"/>
                             <button>🗙</button>
                         </div>
                     </div>
