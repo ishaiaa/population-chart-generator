@@ -29,10 +29,9 @@ function Menu(props) {
                         </div>
                     </div>
                     <h4>Data Fields</h4>
-                    {[0,0,0,0,0,0].map(()=> {
-                        return (
-                            <div className={styles.dataFieldList}>
-                        <div className={styles.dataField}>
+ 
+                    <div className={styles.dataFieldList}>
+                        <div style={{"--bgc": `#fff`, "--fc": '#000'}} className={styles.dataField}>
                             <div className={styles.icon}>
                                 <img src="https://www.pngkey.com/png/full/199-1999886_how-to-set-use-woman-icon-clipart.png" alt="" />
                             </div>
@@ -47,8 +46,6 @@ function Menu(props) {
                             <button>🗙</button>
                         </div>
                     </div>
-                        )
-                    })}
                     <button className={styles.dataFieldAddButton}>＋ Add Field</button>
                 </div>
                 <div className={styles.section}>

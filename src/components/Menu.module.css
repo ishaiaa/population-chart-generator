@@ -26,7 +26,7 @@
 }
 
 button:hover, .checkBox:hover {
-    filter: brightness(120%);
+    filter: brightness(200%);
     transition: 0.4s;
 }
 
@@ -152,12 +152,12 @@ input[type=number] {
     height: 2.5rem;
     align-items: center;
     flex-direction: row;
+    color: var(--fc);
     width: 100%;
     justify-content: space-between;
-    gap: 5px;
     background-color: rgba(0,0,0,0.1);
     border-radius: 10px;
-    border: 3px solid darkslateblue;
+    border: 3px solid var(--bgc);
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -171,7 +171,7 @@ input[type=number] {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border-right: 3px solid darkslateblue;
+    border-right: 3px solid var(--bgc);
 }
 
 .dataField .icon img {
@@ -179,11 +179,12 @@ input[type=number] {
 }
 
 .dataField input {
-    height: 2rem;
-    border-radius: 5px;
+    height: 100%;
     background-color: rgba(0,0,0,0.3);
     border: none;
     outline: none;
+    padding: 5px;
+    box-sizing: border-box;
     font-size: 20px;
     color: white;
 }
@@ -191,18 +192,23 @@ input[type=number] {
 .dataField button {
     width: 2.5rem;
     height: 2.5rem;
-    background-color: darkslateblue;
+    background-color: var(--bgc);
     border: none;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
     color: white;
     padding: 0 5px;
+    color: var(--fc);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .dataField input[type=text] {
-    width: calc(100% - 10rem - 15px);
+    width: calc(100% - 10rem);
+    border-right: 3px solid var(--bgc);
 }
 
 
@@ -228,4 +234,6 @@ input[type=number] {
 .dataNumberButtons button {
     width: 1rem;
     height: 100%;
+    background-color: var(--bgc);
+    opacity: background-color 0.5;
 }
